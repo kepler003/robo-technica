@@ -1,0 +1,77 @@
+
+:root {
+
+  /* Breakpoints */
+  /* xs:  <  576px */
+  /* s:   >= 576px */
+  /* m:   >= 768px */
+  /* l:   >= 992px */
+  /* xl:  >= 1200px */
+  /* xxl: >= 1400px */
+
+  /* Colors */
+  /* --primary-1: hsl(218 94% 98%);
+  --primary-2: hsl(218 94% 94%);
+  --primary-3: hsl(218 94% 88%);
+  --primary-4: hsl(218 94% 70%);
+  --primary-5: hsl(218 94% 47%);
+  --primary-6: hsl(218 94% 37%);
+  --primary-7: hsl(218 94% 29%);
+  --primary-8: hsl(218 94% 17%);
+  --primary-9: hsl(218 94% 10%); */
+  --danger-1: hsl(0 100% 98%);
+  --danger-2: hsl(0 90% 93%);
+  --danger-3: hsl(0 80% 82%);
+  --danger-4: hsl(0 75% 65%);
+  --danger-5: hsl(0 70% 55%);
+  --danger-6: hsl(0 75% 39%);
+  --danger-7: hsl(0 80% 25%);
+  --danger-8: hsl(0 90% 15%);
+  --danger-9: hsl(0 100% 8%);
+  --success-1: hsl(133 100% 96%);
+  --success-2: hsl(133 90% 90%);
+  --success-3: hsl(133 80% 73%);
+  --success-4: hsl(133 70% 56%);
+  --success-5: hsl(133 65% 40%);
+  --success-6: hsl(133 75% 26%);
+  --success-7: hsl(133 80% 15%);
+  --success-8: hsl(133 90% 9%);
+  --success-9: hsl(133 100% 4%);
+  --warning-1: hsl(65 100% 94%);
+  --warning-2: hsl(65 100% 82%);
+  --warning-3: hsl(65 100% 68%);
+  --warning-4: hsl(65 100% 46%);
+  --warning-5: hsl(65 100% 38%);
+  --warning-6: hsl(65 100% 26%);
+  --warning-7: hsl(65 100% 17%);
+  --warning-8: hsl(65 100% 9%);
+  --warning-9: hsl(65 100% 4%);
+  --gray-9: hsl(0 0% 10%);
+  --gray-8: hsl(0 0% 16%);
+  --gray-7: hsl(0 0% 27%);
+  --gray-6: hsl(0 0% 37%);
+  --gray-5: hsl(0 0% 50%);
+  --gray-4: hsl(0 0% 62%);
+  --gray-3: hsl(0 0% 78%);
+  --gray-2: hsl(0 0% 90%);
+  --gray-1: hsl(0 0% 96%);
+
+  /* Defined colors */
+  /* --primary: var(--primary-5); */
+  --danger: var(--danger-5);
+  --success: var(--success-5);
+  --warning: var(--warning-5);
+  --gray: var(--gray-5);
+
+  /* Sizes */
+  --size-1: 0.4rem;
+  --size-2: 0.8rem;
+  --size-3: 1.2rem;
+  --size-4: 1.6rem;
+  --size-5: 2.4rem;
+  --size-6: 3.6rem;
+  --size-7: 4.8rem;
+  --size-8: 6.4rem;
+  --size-9: 9.6rem;
+  --size-10: 12.8rem;
+}
