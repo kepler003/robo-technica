@@ -19,3 +19,14 @@
 .header__social {
   margin-top: var(--size-4);
 }
+
+.header__social-icon {
+  display: inline-block;
+  width: var(--size-5);
+  margin: 0 var(--size-2);
+  opacity: .6;
+}
+
+.header__logo {
+  margin-top: var(--size-4);
+}
