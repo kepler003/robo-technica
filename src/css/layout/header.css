@@ -1,0 +1,21 @@
+.header__row {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: var(--size-4);
+}
+
+.header__contact {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.header__contact a:nth-child(2) {
+  margin-left: var(--size-4);
+}
+
+.header__social {
+  margin-top: var(--size-4);
+}
