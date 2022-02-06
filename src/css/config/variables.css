@@ -56,7 +56,6 @@
   --gray-2: hsl(0 0% 90%);
   --gray-1: hsl(0 0% 96%);
 
-  /* Defined colors */
   /* --primary: var(--primary-5); */
   --danger: var(--danger-5);
   --success: var(--success-5);
@@ -74,4 +73,7 @@
   --size-8: 6.4rem;
   --size-9: 9.6rem;
   --size-10: 12.8rem;
+
+  /* Project-specific vars */
+  --text-color: var(--gray-6);
 }
