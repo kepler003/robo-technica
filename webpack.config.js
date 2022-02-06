@@ -27,10 +27,21 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: 'html-loader'
-      }
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: (pathData) => {
+            const filename = path.resolve(pathData.filename).split(path.sep);
+            return 'images/' + filename[filename.length - 1];
+          }
+        }
+      },
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/html/index.html'),
