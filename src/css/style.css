@@ -1,1 +1,4 @@
-@import './normalize.css';
+@import './config/_config.css';
+@import './utils/_utils.css';
+@import './layout/_layout.css';
+@import './components/_components.css';
