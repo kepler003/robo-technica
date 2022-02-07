@@ -90,6 +90,43 @@
 
 @media only screen and (min-width: 750px) {
 
+  .header__social,
+  .header__logo {
+    order: -1;
+  }
+
+  .header__contact {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .header__contact a {
+    color: blue;
+    font-size: var(--size-3);
+    font-weight: bold;
+  }
+
+  .header__contact a:nth-child(2) {
+    margin-top: var(--size-1);
+  }
+
+  .header__contact a::before {
+    display: inline-block;
+    width: 4.5rem;
+    margin-right: var(--size-2);
+    color: var(--text-color);
+    font-weight: normal;
+    text-align: right;
+  }
+
+  .header__contact a:nth-child(1):before {
+    content: 'email: ';
+  }
+
+  .header__contact a:nth-child(2):before {
+    content: 'tel: ';
+  }
+
   .header__nav {
     display: flex;
     width: 16rem;
