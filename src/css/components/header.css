@@ -9,20 +9,6 @@
   top: 0;
   left: 0;
 }
-/* 
-.header__social {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: var(--size-3);
-}
-
-.header__social-icon {
-  width: var(--size-5);
-  height: var(--size-5);
-  margin: 0 var(--size-2);
-  opacity: .65;
-} */
 
 .header__social {
   display: none;
@@ -55,7 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: var(--size-4);
+  margin-left: var(--size-5);
 }
 
 .header__nav-item--home,
@@ -69,4 +55,94 @@
   justify-content: center;
   align-items: center;
   width: var(--size-5);
+}
+
+
+@media only screen and (min-width: 500px) {
+    
+  .header__social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__social-icon {
+    width: var(--size-5);
+    height: var(--size-5);
+    margin: 0 var(--size-2);
+    opacity: .65;
+  }
+
+  .header__logo {
+    margin: 0 auto;
+  }
+
+  .header__nav {
+    display: flex;
+    width: 16rem;
+    margin-left: 0;
+    text-align: right;
+  }
+
+  .header__nav-list {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+
+  .header__nav {
+    display: flex;
+    width: 16rem;
+    margin-left: 0;
+    text-align: right;
+    
+    width: 100%;
+    margin-top: var(--size-4);
+  }
+
+  .header__nav-list {
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .header__nav-item {
+    margin: 0 var(--size-3);
+  }
+
+  .header__nav-item--home,
+  .header__nav-item--basic {
+    display: flex;
+  }
+
+  .header__nav-item--home {
+    margin-right: auto;
+  }
+
+  .header__nav-item--home a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--size-5);
+  }
+
+  .header__nav-item--lang:nth-child(even) {
+    margin-left: auto;
+  }
+
+  .header__nav-item--lang:nth-child(odd) {
+    margin-left: var(--size-1);
+  }
+
+  .header__nav-item--mobile {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 800px) {
+
+  .header__nav-item--basic {
+    margin: 0 var(--size-4);
+  }
 }
