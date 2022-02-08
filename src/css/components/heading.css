@@ -10,7 +10,8 @@
   content: '';
   width: 75%;
   height: 0.2rem;
-  background-color: var(--gray-2);
+  background-color: var(--primary);
+  opacity: .3;
   position: absolute;
   bottom: 0;
   left: 0;
