@@ -27,3 +27,10 @@ h5,
 h6 {
   font-weight: normal;
 }
+
+p,
+span,
+div,
+textarea {
+  line-height: 1.5;
+}
