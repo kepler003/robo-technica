@@ -3,6 +3,7 @@ export default class Slider {
   constructor(slider) {
     this.slider = slider;
     this.slides = slider.querySelectorAll('.slider__card');
+    this.currentIndex = 0;
     this.renderNav();
   }
 
@@ -33,6 +34,22 @@ export default class Slider {
 
       btn.append(img);
       this.nav.append(btn);
+    }
+  }
+
+  rearrangeSlides() {
+    for (let i = 0; i < this.slides.length; i++) {
+      const slide = this.slides[i];
+      let shift = i - 1;
+      slide.style.transform = `translateX(${-100 * shift}%)`;
+
+      if (i === this.currentIndex) {
+        slide.style.transform = `translateX(-${100 * (shift + 1)}%)`;
+      } else if (i < this.currentIndex) {
+        slide.style.transform = `translateX(-${100 * (shift + 2)}%)`;
+      } else if (i > this.currentIndex) {
+        slide.style.transform = `translateX(-${100 * shift}%)`;
+      }
     }
   }
 }
