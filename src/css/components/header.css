@@ -51,7 +51,7 @@
 }
 
 .header__nav-item--lang a,
-.header__nav-item--mobile {
+.header__nav-item--menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,7 +226,7 @@
     margin-left: var(--size-1);
   }
 
-  .header__nav-item--mobile {
+  .header__nav-item--menu {
     display: none;
   }
 }
