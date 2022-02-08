@@ -38,21 +38,7 @@
 }
 
 .slider__card-heading {
-  margin-top: var(--size-3);
   margin-bottom: calc(var(--size-3) + var(--size-3));
-  padding-bottom: var(--size-2);
-  font-size: var(--size-5);
-  position: relative;
-}
-
-.slider__card-heading::after {
-  content: '';
-  width: 75%;
-  height: 0.2rem;
-  background-color: var(--gray-2);
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .slider__card-description {
@@ -77,6 +63,10 @@
   background-color: #FFF;
   border: 0.2rem solid var(--primary);
   border-radius: 100%;
+}
+
+.slider__btn:hover {
+  cursor: pointer;
 }
 
 .slider__btn--active {
@@ -164,19 +154,18 @@
     height: 5rem;
     margin: 0 0.8rem;
     background-color: #FFF;
-    border: 0.2rem solid var(--primary);
-    border-radius: var(--size-3);
+    border: 0.2rem solid #fff;
+    border-radius: var(--size-2);
     overflow: hidden;
     transition: 150ms;
   }
 
   .slider__btn:hover {
-    cursor: pointer;
     transform: scale(1.1);
   }
 
   .slider__btn--active {
-    border-color: #fff;
+    border-color: var(--primary);
   }
 
   .slider__btn > img {
