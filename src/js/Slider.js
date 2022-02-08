@@ -17,7 +17,7 @@ export default class Slider {
     nav.classList.add('slider__nav');
     this.nav = nav;
     this.slider.append(nav);
-    // nav.addEventListener('click', () => console.log('click'));
+    nav.addEventListener('click', (e) => this.handleNavClick(e));
   }
 
   renderNavBtns() {
@@ -54,9 +54,18 @@ export default class Slider {
   }
 
   changeSlide(index) {
+    index = +index;
     if (index < 0) index = 0;
     if (index > this.slides.length - 1) index = this.slides.length - 1;
     this.currentIndex = index;
     this.rearrangeSlides();
+  }
+
+  handleNavClick(e) {
+    const target = e.target;
+    const btn = target.closest('.slider__btn');
+    if (!btn) return;
+    const index = btn.dataset.index;
+    this.changeSlide(index);
   }
 }
