@@ -1,6 +1,16 @@
 .row {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   width: 100%;
+  margin: 0 auto;
+  padding: var(--size-6) var(--size-4);
+}
+
+
+@media only screen and (min-width: 500px) {
+
+  .row {
+    max-width: 105rem;
+    padding: var(--size-9) var(--size-6);
+  }
 }
