@@ -52,4 +52,11 @@ export default class Slider {
       }
     }
   }
+
+  changeSlide(index) {
+    if (index < 0) index = 0;
+    if (index > this.slides.length - 1) index = this.slides.length - 1;
+    this.currentIndex = index;
+    this.rearrangeSlides();
+  }
 }
