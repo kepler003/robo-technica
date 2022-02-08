@@ -3,6 +3,7 @@ export default class Slider {
   constructor(slider) {
     this.slider = slider;
     this.slides = slider.querySelectorAll('.slider__card');
+    this.btns = [];
     this.currentIndex = 0;
     this.renderNav();
   }
@@ -10,6 +11,7 @@ export default class Slider {
   renderNav() {
     this.renderNavWrapper();
     this.renderNavBtns();
+    this.updateNavbtns();
   }
 
   renderNavWrapper() {
@@ -28,6 +30,7 @@ export default class Slider {
       const btn = document.createElement('btn');
       btn.classList.add('slider__btn');
       btn.dataset.index = i;
+      this.btns.push(btn);
       
       const img = document.createElement('img');
       img.setAttribute('src', src);
@@ -67,5 +70,17 @@ export default class Slider {
     if (!btn) return;
     const index = btn.dataset.index;
     this.changeSlide(index);
+    this.updateNavbtns();
+  }
+
+  updateNavbtns() {
+    for (const btn of this.btns) {
+      const index = +btn.dataset.index;
+      if (index === this.currentIndex) {
+        btn.classList.add('slider__btn--active');
+      } else {
+        btn.classList.remove('slider__btn--active');
+      }
+    }
   }
 }
