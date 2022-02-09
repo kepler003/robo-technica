@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   entry: [
@@ -45,12 +46,14 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/html/index.html'),
-      minify: false
+      // minify: false
     })
   ],
   optimization: {
+    minimize: true,
     minimizer: [
-      new CssMinimizerPlugin()
+      new CssMinimizerPlugin(),
+      new TerserPlugin()
     ]
   },
   resolve: {
