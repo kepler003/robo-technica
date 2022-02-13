@@ -46,10 +46,21 @@
   font-style: italic;
 }
 
-.footer__icon {
+.footer__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: var(--size-6);
   height: var(--size-6);
   margin-right: var(--size-3);
+  padding: var(--size-2);
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+
+.footer__icon {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
