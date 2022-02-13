@@ -1,8 +1,10 @@
 import Modal from './Modal';
 import Slider from './Slider';
+import Map from './Map';
 
 setUpSliders();
 setUpModals();
+setUpMap();
 
 function setUpSliders() {
   const sliders = document.querySelectorAll('.slider');
@@ -16,4 +18,8 @@ function setUpModals() {
   for (const modal of modals) {
     new Modal(modal);
   }
+}
+
+function setUpMap() {
+  Map();
 }
