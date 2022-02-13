@@ -1,11 +1,26 @@
 
 export default class Slider {
-  constructor(slider) {
+  constructor(slider, config) {
     this.slider = slider;
     this.slides = slider.querySelectorAll('.slider__card');
     this.btns = [];
     this.currentIndex = 0;
+    this.slideshowTime = config?.slideshowTime ?? 5000;
+    this.slideChangeInterval = null;
+    
     this.renderNav();
+    this.startAutoScroll();
+  }
+
+  handleNavClick(e) {
+    const target = e.target;
+    const btn = target.closest('.slider__btn');
+
+    if (!btn) return;
+
+    const index = btn.dataset.index;
+    this.changeSlide(index);
+    this.resetAutoScroll();
   }
 
   renderNav() {
@@ -58,18 +73,10 @@ export default class Slider {
 
   changeSlide(index) {
     index = +index;
-    if (index < 0) index = 0;
-    if (index > this.slides.length - 1) index = this.slides.length - 1;
+    if (index < 0) index = this.slides.length - 1;
+    if (index > this.slides.length - 1) index = 0;
     this.currentIndex = index;
     this.rearrangeSlides();
-  }
-
-  handleNavClick(e) {
-    const target = e.target;
-    const btn = target.closest('.slider__btn');
-    if (!btn) return;
-    const index = btn.dataset.index;
-    this.changeSlide(index);
     this.updateNavbtns();
   }
 
@@ -82,5 +89,20 @@ export default class Slider {
         btn.classList.remove('slider__btn--active');
       }
     }
+  }
+
+  startAutoScroll() {
+    this.slideChangeInterval = setInterval(() => {
+      this.changeSlide(this.currentIndex + 1);
+    }, this.slideshowTime);
+  }
+
+  resetAutoScroll() {
+    clearInterval(this.slideChangeInterval);
+    this.startAutoScroll();
+  }
+
+  stopAutoScroll() {
+    clearInterval(this.slideChangeInterval);
   }
 }
