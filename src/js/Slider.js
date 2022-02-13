@@ -1,18 +1,26 @@
 
 export default class Slider {
-  constructor(slider, config) {
+  constructor(slider, config = {}) {
+    // Elems
     this.slider = slider;
     this.slides = slider.querySelectorAll('.slider__card');
     this.nav = null;
     this.btns = [];
+
+    // Config
     this.currentIndex = 0;
-    this.slideshowTime = config?.slideshowTime ?? 5000;
+    this.slideshowTime = +config.slideshowTime ?? 8000;
+    this.slideshowSpeed = +config.slideshowSpeed ?? 500;
     this.slideChangeInterval = null;
     
+    // Calls
     this.renderNav();
     this.startAutoScroll();
+    this.setSlideshowSpeed();
     this.setUpEventHandlers();
   }
+
+  // Event handlers
 
   setUpEventHandlers() {
     this.slider.addEventListener('pointerenter', () => {
@@ -46,6 +54,17 @@ export default class Slider {
     this.startAutoScroll();
   }
 
+  // Config
+
+  setSlideshowSpeed(speed = this.slideshowSpeed) {
+    this.slideshowSpeed = speed;
+    for (const slide of this.slides) {
+      slide.style.transition = `${speed}ms ease-in-out`;
+    }
+  }
+
+  // Nav rendering
+
   renderNav() {
     this.renderNavWrapper();
     this.renderNavBtns();
@@ -77,6 +96,8 @@ export default class Slider {
       this.nav.append(btn);
     }
   }
+
+  // Slides changing
 
   rearrangeSlides() {
     for (let i = 0; i < this.slides.length; i++) {
