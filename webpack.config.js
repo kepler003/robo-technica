@@ -49,8 +49,13 @@ module.exports = {
       // minify: false
     }),
     new HtmlWebpackPlugin({
-      filename: 'praca.html',
-      template: path.resolve(__dirname, './src/html/praca.html')
+      filename: 'kariera.html',
+      template: path.resolve(__dirname, './src/html/kariera.html')
+      // minify: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'kontakt.html',
+      template: path.resolve(__dirname, './src/html/kontakt.html')
       // minify: false
     })
   ],

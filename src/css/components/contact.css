@@ -1,0 +1,35 @@
+.contact {
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.contact__card {
+  flex-flow: column nowrap;
+  flex-grow: 1;
+  margin: var(--size-4);
+  padding: var(--size-5) var(--size-2);
+}
+
+.contact__list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  list-style: none;
+}
+
+.contact__list li {
+  text-align: center;
+}
+
+.contact__list a {
+  color: blue;
+}
+
+
+@media only screen and (min-width: 930px) {
+
+  .contact__card {
+    flex-grow: initial;
+    width: 28%;
+  }
+}
