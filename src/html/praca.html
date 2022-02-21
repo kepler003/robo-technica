@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kariera</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__social">
+      <a class="header__social-icon" href="https://facebook.pl/">
+        <img class="icon" src="../assets/icons/facebook.png" alt="Facebook icon">
+      </a>
+      <a class="header__social-icon" href="https://www.linkedin.com/">
+        <img class="icon" src="../assets/icons/linkedin.png" alt="LinkedIn icon">
+      </a>
+      <a class="header__social-icon" href="https://www.youtube.com/">
+        <img class="icon" src="../assets/icons/youtube.png" alt="YouTube icon">
+      </a>
+      <a class="header__social-icon" href="https://www.instagram.com/">
+        <img class="icon" src="../assets/icons/instagram.png" alt="Instagram icon">
+      </a>
+    </div>
+    <div class="header__contact">
+      <a href="mailto:example@mail.com">example@mail.com</a>
+      <a href="tel:+48123456789">+48 123 456 789</a>
+    </div>
+    <a class="header__logo" href="index.html">
+      <img src="https://via.placeholder.com/100x100" alt="Company logo">
+    </a>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item header__nav-item--home"><a href="#"><img class="icon" src="../assets/icons/home.png"></a></li>
+        <li class="header__nav-item header__nav-item--basic"><a href="#">Realizacje</a></li>
+        <li class="header__nav-item header__nav-item--basic"><a href="#">Budowa maszyn</a></li>
+        <li class="header__nav-item header__nav-item--basic"><a href="#">Serwis</a></li>
+        <li class="header__nav-item header__nav-item--basic"><a href="#">Kariera</a></li>
+        <li class="header__nav-item header__nav-item--basic"><a href="#">Kontakt</a></li>
+        <li class="header__nav-item header__nav-item--lang"><a href="#"><img class="icon" src="../assets/icons/pl.png"></a></li>
+        <li class="header__nav-item header__nav-item--lang"><a href="#"><img class="icon" src="../assets/icons/uk.png"></a></li>
+        <li class="header__nav-item header__nav-item--menu" data-modal-open="main-menu"><img class="icon" src="../assets/icons/hamburger.png"></li>
+      </ul>
+      <ul class="header__nav-list--mobile modal" data-modal="main-menu">
+        <li class="header__nav-item header__nav-item--mobile"><a href="#">Strona główna</a></li>
+        <li class="header__nav-item header__nav-item--mobile"><a href="#">Realizacje</a></li>
+        <li class="header__nav-item header__nav-item--mobile"><a href="#">Budowa maszyn</a></li>
+        <li class="header__nav-item header__nav-item--mobile"><a href="#">Serwis</a></li>
+        <li class="header__nav-item header__nav-item--mobile"><a href="#">Kariera</a></li>
+        <li class="header__nav-item header__nav-item--mobile"><a href="#">Kontakt</a></li>
+        <li class="header__nav-item header__nav-item--mobile header__nav-item--close modal__close" data-modal-close="main-menu">
+          <img class="icon" src="../assets/icons/close.png">
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    
+    <article class="career row">
+      <div class="career__card card">
+        <h2 class="card__heading heading-1 heading--underline">Kariera</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident sunt, vitae quisquam eius ut! Enim cupiditate aperiam rerum esse earum optio eaque itaque dolore nostrum autem aspernatur nam blanditiis similique ab pariatur praesentium voluptate excepturi ipsum dignissimos at id facilis, labore qui molestias? Ut repellat aliquid dolores nostrum accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed mollitia unde sint, cumque eum veritatis illum at odio eaque modi asperiores corporis sapiente voluptatibus illo.</p>
+      </div>
+    </article>
+    
+  </main>
+
+  <footer class="footer row row--no-padding">
+    <section class="footer__map" id="map"></section>
+    <section class="footer__contact">
+      <a href="#">
+        <img  class="footer__logo" src="https://via.placeholder.com/500x500" alt="Company logo">
+      </a>
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <span class="footer__icon-box">
+            <img class="footer__icon" src="../assets/icons/pin.png">
+          </span>
+          <span>Gierczyce 224, 32-744 Łapczyca</span>
+        </li>
+        <li class="footer__list-item">
+          <span class="footer__icon-box">
+            <img class="footer__icon" src="../assets/icons/phone.png">
+          </span>
+          <span><a href="#">+48 721 700 993</a></span>
+        </li>
+        <li class="footer__list-item">
+          <span class="footer__icon-box">
+            <img class="footer__icon" src="../assets/icons/email.png">
+          </span>
+          <span><a href="#">karol.prokopek@robo-technica.pl</a></span>
+        </li>
+      </ul>
+    </section>
+  </footer>
+  
+</body>
+</html>

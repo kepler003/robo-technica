@@ -45,7 +45,12 @@ module.exports = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './src/html/index.html'),
+      template: path.resolve(__dirname, './src/html/index.html')
+      // minify: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'praca.html',
+      template: path.resolve(__dirname, './src/html/praca.html')
       // minify: false
     })
   ],
