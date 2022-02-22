@@ -57,6 +57,11 @@ module.exports = {
       filename: 'kontakt.html',
       template: path.resolve(__dirname, './src/html/kontakt.html')
       // minify: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'polityka.html',
+      template: path.resolve(__dirname, './src/html/polityka.html')
+      // minify: false
     })
   ],
   optimization: {
