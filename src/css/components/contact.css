@@ -5,8 +5,8 @@
 
 .contact__card {
   flex-flow: column nowrap;
-  flex-grow: 1;
-  margin: var(--size-4);
+  width: 100%;
+  margin: var(--size-4) auto;
   padding: var(--size-5) var(--size-2);
 }
 
@@ -30,6 +30,6 @@
 
   .contact__card {
     flex-grow: initial;
-    width: 28%;
+    width: 30%;
   }
 }
