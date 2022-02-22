@@ -1,0 +1,12 @@
+.policy {
+  display: block;
+}
+
+.policy p {
+  margin-top: var(--size-2);
+}
+
+.policy__heading {
+  display: inline-block;
+  margin-bottom: var(--size-4);
+}
