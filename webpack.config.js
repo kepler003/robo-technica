@@ -62,6 +62,21 @@ module.exports = {
       filename: 'polityka.html',
       template: path.resolve(__dirname, './src/html/polityka.html')
       // minify: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'budowa-maszyn.html',
+      template: path.resolve(__dirname, './src/html/budowa-maszyn.html')
+      // minify: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'realizacje.html',
+      template: path.resolve(__dirname, './src/html/realizacje.html')
+      // minify: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'serwis.html',
+      template: path.resolve(__dirname, './src/html/serwis.html')
+      // minify: false
     })
   ],
   optimization: {
