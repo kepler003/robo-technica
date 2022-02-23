@@ -26,6 +26,8 @@
 
 .header__logo img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .header__nav {
@@ -237,6 +239,10 @@
 
 
 @media only screen and (min-width: 1000px) {
+
+  .header__social-icon {
+    margin: 0 var(--size-4);
+  }
 
   .header__nav-list {
     padding-left: var(--size-8);
