@@ -45,38 +45,43 @@ module.exports = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './src/html/index.html')
-      // minify: false
+      template: path.resolve(__dirname, './src/html/index.html'),
+      minify: false
     }),
     new HtmlWebpackPlugin({
       filename: 'kariera.html',
-      template: path.resolve(__dirname, './src/html/kariera.html')
-      // minify: false
+      template: path.resolve(__dirname, './src/html/kariera.html'),
+      minify: false
     }),
     new HtmlWebpackPlugin({
       filename: 'kontakt.html',
-      template: path.resolve(__dirname, './src/html/kontakt.html')
-      // minify: false
+      template: path.resolve(__dirname, './src/html/kontakt.html'),
+      minify: false
     }),
     new HtmlWebpackPlugin({
       filename: 'polityka.html',
-      template: path.resolve(__dirname, './src/html/polityka.html')
-      // minify: false
+      template: path.resolve(__dirname, './src/html/polityka.html'),
+      minify: false
     }),
     new HtmlWebpackPlugin({
       filename: 'budowa-maszyn.html',
-      template: path.resolve(__dirname, './src/html/budowa-maszyn.html')
-      // minify: false
+      template: path.resolve(__dirname, './src/html/budowa-maszyn.html'),
+      minify: false
     }),
     new HtmlWebpackPlugin({
       filename: 'realizacje.html',
-      template: path.resolve(__dirname, './src/html/realizacje.html')
-      // minify: false
+      template: path.resolve(__dirname, './src/html/realizacje.html'),
+      minify: false
     }),
     new HtmlWebpackPlugin({
       filename: 'serwis.html',
-      template: path.resolve(__dirname, './src/html/serwis.html')
-      // minify: false
+      template: path.resolve(__dirname, './src/html/serwis.html'),
+      minify: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'home.html',
+      template: path.resolve(__dirname, './src/html/home.html'),
+      minify: false
     })
   ],
   optimization: {
