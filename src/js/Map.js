@@ -5,11 +5,14 @@ export default function Map() {
     attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
   }).addTo(map);
 
+  const href = document.querySelector('a.header__logo').getAttribute('href');
+  const phrase = href.includes('index') ? 'Tu jesteśmy' : 'We\'re here';
+
   const marker = L.marker([49.9475, 20.3293]).addTo(map);
   marker.bindPopup(
     L.popup({
       closeButton: false
     })
-    .setContent('Tu jesteśmy')
+    .setContent(phrase)
   ).openPopup();
 }
