@@ -72,6 +72,7 @@
 
 .footer__end {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   width: 100%;
   padding: 0 var(--size-2);
@@ -80,6 +81,10 @@
 
 .footer__end a {
   color: blue;
+}
+
+.footer__end-icons {
+  margin-left: auto;
 }
 
 @media only screen and (min-width: 800px) {
