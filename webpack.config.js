@@ -97,6 +97,21 @@ module.exports = {
       filename: 'contact.html',
       template: path.resolve(__dirname, './src/html/contact.html'),
       minify: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'policy.html',
+      template: path.resolve(__dirname, './src/html/policy.html'),
+      minify: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'solutions.html',
+      template: path.resolve(__dirname, './src/html/solutions.html'),
+      minify: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'service.html',
+      template: path.resolve(__dirname, './src/html/service.html'),
+      minify: false
     })
   ],
   optimization: {
