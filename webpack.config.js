@@ -87,6 +87,11 @@ module.exports = {
       filename: 'mechanical-engineering.html',
       template: path.resolve(__dirname, './src/html/mechanical-engineering.html'),
       minify: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'career.html',
+      template: path.resolve(__dirname, './src/html/career.html'),
+      minify: false
     })
   ],
   optimization: {
