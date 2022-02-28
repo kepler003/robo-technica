@@ -92,6 +92,11 @@ module.exports = {
       filename: 'career.html',
       template: path.resolve(__dirname, './src/html/career.html'),
       minify: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'contact.html',
+      template: path.resolve(__dirname, './src/html/contact.html'),
+      minify: false
     })
   ],
   optimization: {

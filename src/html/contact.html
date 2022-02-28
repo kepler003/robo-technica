@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/photos/favicon.png"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__social">
+        <!-- TO DO -->
+        <!-- Wstawić link do profilu Facebook -->
+        <a class="header__social-icon" href="https://facebook.pl/">
+          <img
+            class="icon"
+            src="../assets/icons/facebook.png"
+            alt="Facebook icon"
+          />
+        </a>
+        <!-- TO DO -->
+        <!-- Wstawić link do profilu LinkedIn -->
+        <a class="header__social-icon" href="https://www.linkedin.com/">
+          <img
+            class="icon"
+            src="../assets/icons/linkedin.png"
+            alt="LinkedIn icon"
+          />
+        </a>
+        <!-- TO DO -->
+        <!-- Wstawić link do kanału YouTube -->
+        <a class="header__social-icon" href="https://www.youtube.com/">
+          <img
+            class="icon"
+            src="../assets/icons/youtube.png"
+            alt="YouTube icon"
+          />
+        </a>
+        <!-- TO DO -->
+        <!-- Wstawić link do profilu Instagram -->
+        <a class="header__social-icon" href="https://www.instagram.com/">
+          <img
+            class="icon"
+            src="../assets/icons/instagram.png"
+            alt="Instagram icon"
+          />
+        </a>
+      </div>
+      <div class="header__contact">
+        <a href="mailto:karol.prokopek@robo-technica.pl"
+          >karol.prokopek@robo-technica.pl</a
+        >
+        <a href="tel:+48721700993">+48 721 700 993</a>
+      </div>
+      <a class="header__logo" href="index.html">
+        <!-- TO DO -->
+        <!-- Wstawić logo -->
+        <img src="https://via.placeholder.com/100x100" alt="Company logo" />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item header__nav-item--home">
+            <a href="./index.html"
+              ><img class="icon" src="../assets/icons/home.png"
+            /></a>
+          </li>
+          <li class="header__nav-item header__nav-item--basic">
+            <a href="./realizacje.html">Realizacje</a>
+          </li>
+          <li class="header__nav-item header__nav-item--basic">
+            <a href="./budowa-maszyn.html">Budowa maszyn</a>
+          </li>
+          <li class="header__nav-item header__nav-item--basic">
+            <a href="./serwis.html">Serwis</a>
+          </li>
+          <li class="header__nav-item header__nav-item--basic">
+            <a href="./kariera.html">Kariera</a>
+          </li>
+          <li class="header__nav-item header__nav-item--basic">
+            <a href="./kontakt.html">Kontakt</a>
+          </li>
+          <li class="header__nav-item header__nav-item--lang">
+            <a href="./index.html"
+              ><img class="icon" src="../assets/icons/pl.png"
+            /></a>
+          </li>
+          <!-- TO DO -->
+          <!-- Wstawić link do wersji angielskiej strony głównej -->
+          <li class="header__nav-item header__nav-item--lang">
+            <a href="#"><img class="icon" src="../assets/icons/uk.png" /></a>
+          </li>
+          <li
+            class="header__nav-item header__nav-item--menu"
+            data-modal-open="main-menu"
+          >
+            <img class="icon" src="../assets/icons/hamburger.png" />
+          </li>
+        </ul>
+        <ul class="header__nav-list--mobile modal" data-modal="main-menu">
+          <li class="header__nav-item header__nav-item--mobile">
+            <a href="./index.html">Strona główna</a>
+          </li>
+          <li class="header__nav-item header__nav-item--mobile">
+            <a href="./realizacje.html">Realizacje</a>
+          </li>
+          <li class="header__nav-item header__nav-item--mobile">
+            <a href="./budowa-maszyn.html">Budowa maszyn</a>
+          </li>
+          <li class="header__nav-item header__nav-item--mobile">
+            <a href="./serwis.html">Serwis</a>
+          </li>
+          <li class="header__nav-item header__nav-item--mobile">
+            <a href="./kariera.html">Kariera</a>
+          </li>
+          <li class="header__nav-item header__nav-item--mobile">
+            <a href="./kontakt.html">Kontakt</a>
+          </li>
+          <li
+            class="header__nav-item header__nav-item--mobile header__nav-item--close modal__close"
+            data-modal-close="main-menu"
+          >
+            <img class="icon" src="../assets/icons/close.png" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- TO DO -->
+      <!-- Uzupełnić karty z opisem -->
+      <article class="contact row row--max">
+        <section class="contact__card card">
+          <h2 class="card__heading heading-4 heading--underline">
+            Customer service office
+          </h2>
+          <ul class="contact__list">
+            <li>
+              <a href="mailto:karol.prokopek@robo-technica.pl"
+                >karol.prokopek@robo-technica.pl</a
+              >
+            </li>
+            <li><a href="tel:+48721700993">+48 721 700 993</a></li>
+          </ul>
+        </section>
+        <section class="contact__card card">
+          <h2 class="card__heading heading-4 heading--underline">
+            Lorem ipsum
+          </h2>
+          <ul class="contact__list">
+            <li>Lorem ipsum dolor</li>
+            <li>sit amet</li>
+          </ul>
+        </section>
+        <section class="contact__card card">
+          <h2 class="card__heading heading-4 heading--underline">Dolor sit</h2>
+          <ul class="contact__list">
+            <li>Quisque tincidunt tortor a neque fringilla</li>
+            <li>Quisque in diam dignissim</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer row row--no-padding">
+      <section class="footer__map" id="map"></section>
+      <section class="footer__contact">
+        <a href="./index.html">
+          <!-- TO DO -->
+          <!-- Wstawić logo -->
+          <img
+            class="footer__logo"
+            src="https://via.placeholder.com/500x500"
+            alt="Company logo"
+          />
+        </a>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <span class="footer__icon-box">
+              <img class="footer__icon" src="../assets/icons/pin.png" />
+            </span>
+            <span>Gierczyce 224, 32-744 Łapczyca</span>
+          </li>
+          <li class="footer__list-item">
+            <span class="footer__icon-box">
+              <img class="footer__icon" src="../assets/icons/phone.png" />
+            </span>
+            <span><a href="tel:+48721700993">+48 721 700 993</a></span>
+          </li>
+          <li class="footer__list-item">
+            <span class="footer__icon-box">
+              <img class="footer__icon" src="../assets/icons/email.png" />
+            </span>
+            <span
+              ><a href="mailto:karol.prokopek@robo-technica.pl"
+                >karol.prokopek@robo-technica.pl</a
+              ></span
+            >
+          </li>
+          <li class="footer__list-item footer__list-item--policy">
+            <sub
+              ><span
+                ><a href="./polityka.html">Polityka prywatności</a></span
+              ></sub
+            >
+          </li>
+        </ul>
+      </section>
+      <div class="footer__end">
+        <sub>
+          Created by
+          <a
+            href="https://www.linkedin.com/in/bartlomiej-pyzocha/"
+            target="_blank"
+            >Bartłomiej Pyzocha</a
+          >
+        </sub>
+      </div>
+    </footer>
+  </body>
+</html>
